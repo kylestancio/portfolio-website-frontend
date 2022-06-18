@@ -5,6 +5,6 @@ export interface PortfolioInterface {
   subtitle: string,
   tags?: Array<string>
   text1: string,
-  resource_link?: string,
-  resource_text?: string
+  resources_link?: string,
+  resources_text?: string
 }
