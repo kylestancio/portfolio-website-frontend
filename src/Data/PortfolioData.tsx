@@ -15,7 +15,7 @@ export const Portfolio = [
       'TwitterAPI'
     ],
     text1: 'Me, Ray James Amer L. Gonzales, and Rence Lennard A. Galaraga, created a system to ma possible flooding events in Davao City by using Twitter as our raw data, Natural Language Processing using spaCy, and display it on a website made using Django and Google Maps API. Initially, we wanted to use Leaflet, however, the geocoding of Leaflet in Davao City is still a bit inaccurate; hence we used Google Maps API Geocoding Service to convert addresses to coordinates. There was also a hard time getting the addresses from tweets as some tweets will be made in the Filipino language, and there was still little support for Natural Language Processing in Filipino.',
-    resources_link: process.env.REACT_APP_BACKEND + 'get/files/Thesis.pdf',
+    resources_link: process.env.REACT_APP_BACKEND + 'get/file/Thesis.pdf',
     resources_text: 'Download Thesis file here'
   },
   {
