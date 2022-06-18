@@ -16,9 +16,10 @@ import { lightTheme, darkTheme } from './Data/ThemesData';
 export const ThemeContext = React.createContext(lightTheme)
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme')==='light'?lightTheme:darkTheme)
+  const [theme, setTheme] = useState(localStorage.getItem('theme')==='light' || localStorage.getItem('theme') === null?lightTheme:darkTheme)
 
   useEffect(()=>{
+    console.log(localStorage.getItem('theme'))
     localStorage.setItem('theme', theme===lightTheme?'light':'dark')
   },[theme])
 
