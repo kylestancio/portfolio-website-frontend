@@ -43,9 +43,6 @@ function Home() {
             <EducationalBackground />
             <ProgrammingBackground />
             <MultimediaBackground />
-            <Container className={`bg-${theme.background} rounded p-3 shadow mb-3`}>
-              <h3 className={`mt-3 text-${theme.text}`}>Project Portfolio</h3>
-            </Container>
           </Col>
         </Row>
       </Container>
