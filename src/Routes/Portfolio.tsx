@@ -66,7 +66,7 @@ const portfolio = [
 function Portfolio() {
   const theme = useContext(ThemeContext)
   return (
-    <Container style={{ height: '180vh'}}>
+    <Container className='pb-5'>
       <h1 className={`mt-5 display-1 text-${theme.text}`}>Portfolio</h1>
       <p className={`fs-3 text-${theme.text}`}>The project that I've done</p>
       {
