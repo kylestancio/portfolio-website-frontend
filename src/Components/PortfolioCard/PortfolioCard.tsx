@@ -10,7 +10,7 @@ type Props = {
 function PortfolioCard({ portfolio }: Props) {
   const theme = useContext(ThemeContext)
   return (
-    <Card key={portfolio.id} className={`mb-3 border border-light bg-${theme.background}`}>
+    <Card key={portfolio.id} className={`mb-3 border border-light bg-${theme.background} shadow`}>
       <a href={portfolio.img_src} target="_blank" rel="noreferrer">
       <Card.Img variant="top" src={portfolio.img_src} style={{ height: '30vh', objectFit: 'cover'}} />
       </a>
