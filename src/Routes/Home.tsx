@@ -9,30 +9,20 @@ import MultimediaBackground from '../Components/MultimediaBackground';
 
 
 function Home() {
-  const [profileImage, setProfileImage] = useState<string | null>(null)
-  useEffect(()=>{
-    const fetchImage = async () => {
-      const res = await fetch(`${process.env.REACT_APP_BACKEND}get/image/profile-image.jpg`)
-      const imageBlob = await res.blob()
-      const imageURL = URL.createObjectURL(imageBlob)
-      setProfileImage(imageURL)
-    }
-    fetchImage()
-  },[])
-
   const theme = useContext(ThemeContext)
+
   return (
     <>
       <Container className="mt-3">
         <Row>
           <Col lg={3}>
             <Container className={`bg-${theme.background} border border-light rounded p-3 shadow mb-3`}>
-              {!profileImage && <div className='d-flex justify-content-center align-items-center m-5'><div className={`spinner-grow text-${theme.text}`} role='status'><span className="visually-hidden">Loading...</span></div></div>}
-              {profileImage && <Image 
-                src={ profileImage } 
+              <Image 
+                src={`${process.env.REACT_APP_BACKEND}get/image/profile-image.jpg`} 
                 roundedCircle={true} 
-                fluid={true} 
-                className="d-block mx-auto" />}
+                fluid={true}
+                loading={'lazy'}
+                className="d-block mx-auto" />
               <p className={`display-6 text-center mb-1 text-${theme.text}`}>Kyle Tancio</p>
               <p className={`text-muted text-center mb-1`}>Junior Web Developer</p>
               <p className={`text-center mb-3 text-${theme.text}`}>Philippines | Japan</p>
