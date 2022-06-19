@@ -19,7 +19,6 @@ function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme')==='light' || localStorage.getItem('theme') === null?lightTheme:darkTheme)
 
   useEffect(()=>{
-    console.log(localStorage.getItem('theme'))
     localStorage.setItem('theme', theme===lightTheme?'light':'dark')
   },[theme])
 
