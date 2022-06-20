@@ -21,7 +21,7 @@ function ProgrammingBackground() {
         </Row>
       </Container>
       <Container>
-        <h5 className={`mt-5 text-${theme.text}`}>Web Technologies</h5>
+        <h5 className={`mt-5 text-${theme.text}`}>Web Technologies & Frameworks</h5>
         <Row className='row-cols-2 row-cols-md-3 row-cols-xl-4 g-3'>
           {WebTechnologiesData.map((data) => {
             return <Col key={data.name}><CustomCardItem data={ data } /></Col>

@@ -30,6 +30,10 @@ export const WebTechnologiesData = [
     img_file: "nodejs.png",
     name: "NodeJS"
   },
+  {
+    img_file: "django.png",
+    name: "Django"
+  }
 ]
 export const FrontendFrameworksData = [
   {
@@ -39,10 +43,6 @@ export const FrontendFrameworksData = [
   {
     img_file: "vuejs.png",
     name: "Vue.js"
-  },
-  {
-    img_file: "django.png",
-    name: "Django"
   },
 ]
 
